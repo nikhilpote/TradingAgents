@@ -110,6 +110,7 @@ conda activate tradingagents
 Install dependencies:
 ```bash
 pip install -r requirements.txt
+pip install -e .
 ```
 
 ### Required APIs
@@ -211,7 +212,8 @@ The `dashboard` directory contains a minimal Flask dashboard that integrates the
 
 ```bash
 pip install -r requirements.txt
-python dashboard/app.py
+pip install -e .
+python -m dashboard.app
 ```
 
 Open `http://localhost:5000` in a browser and upload a portfolio file. An API endpoint is available at `/api/analyze` for programmatic use.

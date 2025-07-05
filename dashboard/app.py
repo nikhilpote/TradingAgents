@@ -1,5 +1,11 @@
 from flask import Flask, render_template, request, redirect, url_for, jsonify
+import os
+import sys
 import pandas as pd
+
+# Allow running this script directly without installing the package
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 from tradingagents.graph.trading_graph import TradingAgentsGraph
 
 app = Flask(__name__)
