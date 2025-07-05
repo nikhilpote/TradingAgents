@@ -192,6 +192,20 @@ print(decision)
 
 You can view the full list of configurations in `tradingagents/default_config.py`.
 
+### Simple Web App
+
+This repository also includes a small Flask example that showcases sample data from the Indian stock market.
+To run it, install dependencies and set your API key:
+
+```bash
+pip install -r requirements.txt
+export INDIAN_STOCK_API_KEY=d1k7ip1r01ql1h3b5r90d1k7ip1r01ql1h3b5r9g
+python webapp/app.py
+```
+
+Visit `http://localhost:5000` in your browser to see a table of sample NIFTY 50 prices.
+
+
 ## Contributing
 
 We welcome contributions from the community! Whether it's fixing a bug, improving documentation, or suggesting a new feature, your input helps make this project better. If you are interested in this line of research, please consider joining our open-source financial AI research community [Tauric Research](https://tauric.ai/).
