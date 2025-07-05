@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Trading Dashboard</title>
+</head>
+<body>
+  <h1>Upload Portfolio CSV</h1>
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" accept=".csv" required>
+    <button type="submit">Analyze</button>
+  </form>
+  <p>CSV should contain a column of symbols. Results are generated with the TradingAgents backend.</p>
+</body>
+</html>

@@ -205,6 +205,17 @@ python webapp/app.py
 
 Visit `http://localhost:5000` in your browser to see a table of sample NIFTY 50 prices.
 
+### SaaS Dashboard Example
+
+The `dashboard` directory contains a minimal Flask dashboard that integrates the TradingAgents backend. Users upload a CSV of tickers, and the app returns trading signals along with risk judgements.
+
+```bash
+pip install -r requirements.txt
+python dashboard/app.py
+```
+
+Open `http://localhost:5000` in a browser and upload a portfolio file. An API endpoint is available at `/api/analyze` for programmatic use.
+
 
 ## Contributing
 

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Analysis Results</title>
+  <style>
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+    th { background-color: #f2f2f2; }
+  </style>
+</head>
+<body>
+  <h1>Trading Analysis Results</h1>
+  <table>
+    <tr>
+      <th>Symbol</th>
+      <th>Decision</th>
+      <th>Risk Judge</th>
+      <th>Plan</th>
+    </tr>
+    {% for r in results %}
+    <tr>
+      <td>{{ r.symbol }}</td>
+      <td>{{ r.decision }}</td>
+      <td>{{ r.risk_judge }}</td>
+      <td>{{ r.plan }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+  <a href="/">Back</a>
+</body>
+</html>
